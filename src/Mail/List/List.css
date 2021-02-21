@@ -1,0 +1,9 @@
+.list { 
+    flex: 1;
+    overflow: scroll;
+}
+
+.list__settings { 
+    display: flex;
+    justify-content: space-between;
+}

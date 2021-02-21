@@ -1,10 +1,12 @@
 import React from 'react';
-import './Sidebar';
+import './Option.css';
 
-function Option() {
+function Option({ Icon, title, number, selected }) {
     return (
-        <div>
-            
+        <div className={`option ${selected && 'option--active'}`}>
+            <Icon />
+            <h3>{title}</h3>
+            <p>{number}</p>
         </div>
     );
 }
