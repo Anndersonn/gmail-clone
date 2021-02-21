@@ -6,7 +6,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import Mail from './Mail/Mail';
 import EmailList from './Mail/List/List';

@@ -8,6 +8,10 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import KeyboardHideIcon from '@material-ui/icons/KeyboardHide';
 import SettingsIcon from '@material-ui/icons/Settings';
+import Sections from './Sections/Sections';
+import InboxIcon from '@material-ui/icons/Inbox';
+import PeopleIcon from '@material-ui/icons/People';
+import LocalOfferIcon from '@material-ui/icons/LocalOffer';
 
 function List() {
     return (
@@ -40,8 +44,10 @@ function List() {
                     </IconButton>
                 </div>
             </div>
-            <div className="List__sections">
-
+            <div className="list__sections">
+                <Sections Icon={InboxIcon} title='Primary' color='red' selected />
+                <Sections Icon={PeopleIcon} title='Social' color='#1A73E8' />
+                <Sections Icon={LocalOfferIcon} title='Promotions' color='green' />
             </div>
         </div>
     );
