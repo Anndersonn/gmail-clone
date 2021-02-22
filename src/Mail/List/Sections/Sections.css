@@ -7,6 +7,7 @@
     cursor: pointer;
     color: grey;
     border-width: 0 !important;
+
 }
 
 .section--active { 
@@ -16,5 +17,5 @@
 
 .section:hover { 
     background-color: whitesmoke;
-    border-width:  3px !important;
+    color: black;
 }

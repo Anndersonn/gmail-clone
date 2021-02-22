@@ -12,6 +12,7 @@ import Sections from './Sections/Sections';
 import InboxIcon from '@material-ui/icons/Inbox';
 import PeopleIcon from '@material-ui/icons/People';
 import LocalOfferIcon from '@material-ui/icons/LocalOffer';
+import Row from './Row/Row';
 
 function List() {
     return (
@@ -48,6 +49,10 @@ function List() {
                 <Sections Icon={InboxIcon} title='Primary' color='red' selected />
                 <Sections Icon={PeopleIcon} title='Social' color='#1A73E8' />
                 <Sections Icon={LocalOfferIcon} title='Promotions' color='green' />
+            </div>
+            <div className="list__main">
+                <Row title='Twitch' subject='Hello' description='testing' time='10pm'/>
+                <Row title='Twitch' subject='Hello' description='testing' time='10pm'/>
             </div>
         </div>
     );
