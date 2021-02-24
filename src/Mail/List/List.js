@@ -63,8 +63,6 @@ function List() {
                 {emails.map(({id, data: {to, subject, message, timestamp}}) => ( 
                     <Row id={id} key={id} title={to} subject={subject} description={message} time={new Date(timestamp?.seconds * 1000).toUTCString()}/>
                 ))}
-                <Row title='Twitch' subject='Hello' description='testing' time='10pm' />
-                <Row title='Twitch' subject='Hello' description='testing' time='10pm' />
             </div>
         </div>
     );

@@ -22,3 +22,7 @@
     background-color: white;
     z-index: 999;
 }
+
+.list__main { 
+    padding-bottom: 20%;
+}

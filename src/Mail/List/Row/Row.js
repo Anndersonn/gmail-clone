@@ -4,11 +4,20 @@ import { Checkbox, IconButton } from '@material-ui/core';
 import StarOutlineIcon from '@material-ui/icons/StarOutline';
 import LabelImportantIcon from '@material-ui/icons/LabelImportant';
 import { useHistory } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { selectMail } from '../../../features/mailSlice';
 
 function Row({ id, title, subject, description, time }) {
     const history = useHistory();
+    const dispatch = useDispatch();
+
+    const openMessage = () => { 
+        dispatch(selectMail({ id, title, subject, description, time }))
+        history.push('/mail')
+    }
+
     return (
-        <div onClick={() => history.push('/mail')} className='row'>
+        <div onClick={openMessage} className='row'>
             <div className="row__options">
                 <Checkbox />
 
@@ -29,7 +38,7 @@ function Row({ id, title, subject, description, time }) {
                 </h4>
             </div>
             <div className="row__time">
-                {description}
+                {/* {description} */}
                 {time}
             </div>
         </div>
