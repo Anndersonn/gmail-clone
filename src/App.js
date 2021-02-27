@@ -32,7 +32,7 @@ function App() {
         }))
       }
     })
-  })
+  }, [dispatch])
   return (
     <Router>
       {!user ? (
